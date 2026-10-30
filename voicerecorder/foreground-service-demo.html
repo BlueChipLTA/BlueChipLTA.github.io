@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VoiceRecorder foreground microphone demonstration</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;margin:24px auto;padding:16px;max-width:820px;color:#1c1c1e;background:white}video{display:block;max-height:72vh;max-width:100%;margin:auto}a{color:#0064d8}</style>
+<main><h1>VoiceRecorder: foreground microphone service</h1><p>Package: com.bluechip.voicerecorder · Version 1.2.1 · Android 16 emulator.</p>
+<p>This silent native Android screen capture demonstrates a user-initiated recording continuing while the app is in the background. The ongoing notification makes recording visible to the user. The user returns, pauses, resumes and saves the local recording.</p>
+<video controls playsinline preload="metadata" src="foreground-demo.mp4">Your browser can open the MP4 link below.</video><p><a href="foreground-demo.mp4">Open MP4 video</a></p>
+<ol><li>0–5 s: start recording from the library and expand the recording controls.</li><li>5–13 s: leave the app; recording continues, with a microphone indicator and ongoing notification.</li><li>13–23 s: return to the app, pause, resume and save; the saved item appears in the library.</li></ol>
+<p>Captured with an isolated instrumentation test using disposable data. There is no audio track or personal recording content in this video. The demonstration uses the privateBeta debug flavor, which shares the recording service and UI with publicFree and disables Google services. FOREGROUND_SERVICE_MICROPHONE is used only for the recording session that the user starts.</p>
+<p><a href="./">Support</a> · <a href="privacy.html">Privacy policy</a></p></main></html>
